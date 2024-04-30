@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Staatliches&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --staat-font: "Staatliches", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+    --fondo-degradado: linear-gradient(180deg, rgb(10, 77, 77) 0%, black 100%);
+    --negro90: rgb(15, 15, 15);
+}
+
+.staatliches-regular {
+    font-family: var(--staat-font);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.contenedor {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 0, 0);
+    display: grid;
+    place-items: center;
+
+}
+
+.sombra {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
+}
+
+.tarjeta {
+
+    height: 600px;
+    width: 300px;
+    background-color: rgb(21, 0, 44);
+    border-radius: 14px;
+    overflow: hidden;
+
+    & .encabezado {
+        background-image: url(img/fondo.jpg);
+        height: 140px;
+        width: 100%;
+    }
+
+    & .tarjeta2 {
+        height: 370px;
+        width: 100%;
+        position: relative;
+        background-color: #7d00b3;
+
+        & .img {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-image: url(img/carnet.jpg);
+            background-position: center;
+            background-size: contain;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: red;
+            top: -90px;
+            left: 78px;
+        }
+
+        & .texto1 {
+            position: relative;
+            top: 70px;
+            left: 38px;
+        }
+
+        & .texto2 {
+            position: relative;
+            top: 75px;
+            left: 38px;
+            font-size: small;
+        }
+
+        & .texto3 {
+            position: relative;
+            top: 115px;
+            left: 40px;
+        }
+
+        & .texto4 {
+            justify-content: space-between;
+            position: absolute;
+            height: 40px;
+            width: 90%;
+            left: 5%;
+            bottom: 40px;
+            display: flex;
+
+            & .cuadrado1 {
+                flex-direction: column;
+            }
+            & .cuadrado2 {
+                flex-direction: column;
+            }
+            & .cuadrado3 {
+                flex-direction: column;
+            }
+        }
+    }
+
+    & footer {
+        background-image: url(img/fondo.jpg);
+        padding: 15px;
+        text-align: center;
+    }
+
+    & footer button {
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    & footer button:hover{
+        color: #ffffff;
+    }
+    & footer button:hover{
+        background-color: #570058;
+    }
+}
+
+.linea1 {
+    width: 100%;
+    margin: 0px auto;
+    border-style: solid;
+    border-width: 7px;
+    background-color: #6406cf;
+}
+
+
+
+
+/*BOX-SHADOW : X Y BLUR Z COLOR         SOMBRA EXTERIOR*/
+/*BOX-SHADOW : INSET X Y BLUR Z COLOR   SOMBRA INTERIOR*/
